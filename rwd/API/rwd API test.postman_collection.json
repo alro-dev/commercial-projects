@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "9e8d4a3e-fb6f-4066-a529-70a0228f82ab",
+		"name": "rwd API test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24062456"
+	},
+	"item": [
+		{
+			"name": "https://rwd-tasks-v1-apim.azure-api.net/rwd-tasks-v1/rwd_tasks_v1/tasks/service",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Should verify response status code\", () => {\r",
+							"    console.log(pm.response);\r",
+							"    pm.expect(pm.response.code).to.eql(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "52d6e65ed7ae474d88250dd05eaf3b23",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://rwd-tasks-v1-apim.azure-api.net/rwd-tasks-v1/rwd_tasks_v1/tasks/service",
+					"protocol": "https",
+					"host": [
+						"rwd-tasks-v1-apim",
+						"azure-api",
+						"net"
+					],
+					"path": [
+						"rwd-tasks-v1",
+						"rwd_tasks_v1",
+						"tasks",
+						"service"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
