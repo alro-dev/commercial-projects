@@ -17,6 +17,6 @@ describe('Home Page', () => {
     it.each(menuItems)('%s page has %s header', (href, text) => {
       var rwdPage = 'https://reklama-element.pl/';
       cy.visit(adresPage);
-      cy.get("[href='"+ href + "']").click(); //"a.nav-link[href='adresPage/#services']"
+      cy.get("[href='"+ href + "']").click(); //"[href='adresPage/#services']"
     })
   })
