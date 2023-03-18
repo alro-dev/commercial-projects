@@ -1,22 +1,43 @@
 import 'cypress-each'
-var adresPage = 'https://reklama-element.pl/'
+
+var addressPage = 'https://reklama-element.pl/'
+
 const menuItems = [
-    ['http://reklama-element.pl/#services', 'Usługi'],
-    ['http://reklama-element.pl/kontakt/', 'Kontakt'],
-    ['http://reklama-element.pl/#testimonials','Klienci'],
-    ['http://reklama-element.pl/portfolio/','Projekty'],
+  ['menu-item-853', 'Usługi'],
+  ['menu-item-30', 'Kontakt'],
+  ['menu-item-854','Klienci'],
+  ['menu-item-31','Projekty'],
 ]
 
 describe('Home Page', () => {
   it('page is loaded', () => {
-    var rwdPage = 'https://reklama-element.pl/'
-    cy.visit(adresPage);
-    cy.url().should('include', adresPage);
-    });
+    // var addressPage = 'https://reklama-element.pl/'
+    cy.visit(addressPage);
+    cy.url().should('include', addressPage);
+  });
 
-    it.each(menuItems)('%s page has %s header', (href, text) => {
-      var rwdPage = 'https://reklama-element.pl/';
-      cy.visit(adresPage);
-      cy.get("[href='"+ href + "']").click(); //"[href='adresPage/#services']"
+    it.each(menuItems)('%s page has %s header', (id, text) => {
+      // var addressPage = 'https://reklama-element.pl/';
+      cy.visit(addressPage);
+      cy.get("#" + id).click({force: true}); //"#menu-item-853"
     })
-  })
+})
+
+const menuIcons = [
+  ['https://www.facebook.com/Element-Warsztat-Reklamy-106973381465824', 'facebook'],
+]
+
+describe('Home Page - FacebookOpen', () => {
+  it('page is loaded', () => {
+    // var addressPage = 'https://reklama-element.pl/';
+    cy.visit(addressPage);
+    cy.url().should('include', addressPage);
+    });
+    
+    it.each(menuIcons)('%s page has %s menu', (href, text) => {
+    // var addressPage = 'https://reklama-element.pl/';
+        cy.visit(addressPage);
+        cy.get("[href='"+ href + "']").click({force: true, multiple: true}); //"menu-icons[href='facebook']"
+      });
+        
+})
