@@ -35,7 +35,7 @@ describe('Home Page - FacebookOpen', () => {
     });
     
     it.each(menuIcons)('%s page has %s menu', (href, text) => {
-    // var addressPage = 'https://reklama-element.pl/';
+    // const addressPage = 'https://reklama-element.pl/';
         cy.visit(addressPage);
         cy.get("[href='"+ href + "']").click({force: true, multiple: true}); //"menu-icons[href='facebook']"
       });
