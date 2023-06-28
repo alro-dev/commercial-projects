@@ -1,8 +1,8 @@
 {
-  "dependencies": {
-    "cypress": "^12.6.0"
-  },
   "devDependencies": {
+    "cypress": "^12.7.0"
+  },
+  "dependencies": {
     "cypress-each": "^1.13.1"
   }
 }
