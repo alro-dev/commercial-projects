@@ -1,6 +1,6 @@
 import 'cypress-each'
 
-var rwdPage = 'http://mechanikarwd.pl'
+  var rwdPage = 'http://mechanikarwd.pl'
 
 const menuItems = [
     ['/about', 'O nas'],
