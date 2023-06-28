@@ -11,13 +11,13 @@ const menuItems = [
 
 describe('Home Page', () => {
   it('page is loaded', () => {
-    // var addressPage = 'https://reklama-element.pl/'
+    var addressPage = 'https://reklama-element.pl/'
     cy.visit(addressPage);
     cy.url().should('include', addressPage);
   });
 
     it.each(menuItems)('%s page has %s header', (id, text) => {
-      // var addressPage = 'https://reklama-element.pl/';
+      var addressPage = 'https://reklama-element.pl/';
       cy.visit(addressPage);
       cy.get("#" + id).click({force: true}); //"#menu-item-853"
     })
@@ -29,13 +29,13 @@ const menuIcons = [
 
 describe('Home Page - FacebookOpen', () => {
   it('page is loaded', () => {
-    // var addressPage = 'https://reklama-element.pl/';
+    var addressPage = 'https://reklama-element.pl/';
     cy.visit(addressPage);
     cy.url().should('include', addressPage);
     });
     
     it.each(menuIcons)('%s page has %s menu', (href, text) => {
-    // var addressPage = 'https://reklama-element.pl/';
+    var addressPage = 'https://reklama-element.pl/';
         cy.visit(addressPage);
         cy.get("[href='"+ href + "']").click({force: true, multiple: true}); //"menu-icons[href='facebook']"
       });
