@@ -1,6 +1,6 @@
 import 'cypress-each'
 
-const rwdPage = 'http://mechanikarwd.pl'
+  var rwdPage = 'http://mechanikarwd.pl'
 
 const menuItems = [
     ['/about', 'O nas'],
@@ -11,11 +11,13 @@ const menuItems = [
 
 describe('Home Page - menu', () => {
   it('page is loaded', () => {
+    // var rwdPage = 'http://mechanikarwd.pl'
     cy.visit(rwdPage);
     cy.url().should('include', rwdPage);
     });
 
     it.each(menuItems)('%s page has %s header', (href, text) => {
+      // var rwdPage = 'http://mechanikarwd.pl';
       cy.visit(rwdPage);
       cy.get("a.nav-link[href='"+ href + "']").click(); //"a.nav-link[href='/about']"
     })
@@ -29,11 +31,13 @@ const footerItems = [
 
 describe('Home Page - footer', () => {
   it('page is loaded', () => {
+    // var rwdPage = 'http://mechanikarwd.pl'
     cy.visit(rwdPage);
     cy.url().should('include', rwdPage);
     });
 
     it.each(footerItems)('%s page has %s footer', (href, text) => {
+      // var rwdPage = 'http://mechanikarwd.pl';
       cy.visit(rwdPage);
       cy.get(".footer-links > li > a[href='"+ href + "']").click({multiple: true}); //"footer-links[href='about']"
       cy.get(".footer-icons").click() //facebook
@@ -47,13 +51,15 @@ describe('Home Page - footer', () => {
 
     describe('Home Page - footerFacebookOpen', () => {
       it('page is loaded', () => {
+        // var rwdPage = 'http://mechanikarwd.pl'
         cy.visit(rwdPage);
         cy.url().should('include', rwdPage);
         });
     
         it.each(footerIcons)('%s page has %s footer', (href, text) => {
+          // var rwdPage = 'http://mechanikarwd.pl';
           cy.visit(rwdPage);
-          cy.get("[href='"+ href + "']").click(); //"footer-icons[href='facebook']"
+          cy.get("[href='"+ href + "']").click(); //"footer-icons[href='facbook']"
         });
         
       })
