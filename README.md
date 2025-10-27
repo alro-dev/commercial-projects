@@ -1,38 +1,51 @@
-# Commercial Projects
+## 🧪 Commercial Projects – Testing Showcase
 
-Welcome to the **Commercial Projects** repository by [alro-dev](https://github.com/alro-dev). This repository showcases selected commercial web development projects, including production-ready websites and frontend implementations for clients.
+Welcome to the **Commercial Projects** repository by [alro-dev](https://github.com/alro-dev).  
+This repository presents sample commercial-grade web projects used to demonstrate frontend testing workflows and responsive design validation.  
+It is intended as a portfolio showcase for recruiters and collaborators.
 
-## 🌐 Live Projects
+## 🎯 Purpose
 
-- [Reklama Element](https://reklama-element.pl/) – A modern business website for a local advertising company.
-- [RWD Teknik](http://rwd.teknik.pl/) – Responsive web design demo for a technical services provider.
+This repository highlights:
+
+- Example implementations of automated frontend testing using Cypress
+- Responsive design validation across multiple breakpoints
+- Structured project setup for commercial web applications
+- Clean codebase suitable for testing demonstrations
+
+## 🧪 Testing Focus
+
+Each project includes:
+
+- Cypress configuration and test suites
+- Sample UI components and layouts for test coverage
+- Scenarios for responsiveness, navigation, and content rendering
+- Demonstrations of test-driven development practices
+
+## 🌐 Demo Projects
+
+- [Reklama Element](https://reklama-element.pl/) – Sample business website used for layout and navigation testing
+- [RWD Teknik](http://rwd.teknik.pl/) – Responsive design demo used for breakpoint and mobile-first testing
 
 ## 📁 Repository Structure
 
-- `element/` – Source files for the Reklama Element website
-- `rwd/` – Responsive layout and design components for RWD Teknik
-- `.gitignore` – Standard exclusions for node and build artifacts
-- `cypress.config.js` – Configuration for end-to-end testing with Cypress
+- `element/` – Contains source files and Cypress tests for Reklama Element
+- `rwd/` – Contains responsive layout components and tests for RWD Teknik
+- `.gitignore` – Standard exclusions for node modules and build artifacts
+- `cypress.config.js` – Cypress configuration for both projects
 
 ## 🛠 Technologies Used
 
-- HTML5, CSS3, JavaScript
+- HTML5, CSS3, JavaScript (ES6+)
 - Responsive Web Design (RWD)
-- Cypress for automated testing
+- Cypress for end-to-end testing
 
-## 🚀 Purpose
+## 🚀 Getting Started
 
-This repository serves to:
+To run tests locally:
 
-- Archive and document commercial web development work
-- Showcase frontend and responsive design capabilities
-- Provide reference implementations for future projects
-
-## 📄 License
-
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to explore the code and visit the live sites to see the projects in action!
-
+```bash
+git clone https://github.com/alro-dev/commercial-projects.git
+cd commercial-projects/<project-folder>
+npm install
+npx cypress open
