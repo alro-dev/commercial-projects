@@ -2,7 +2,6 @@
 
 Welcome to the **Commercial Projects** repository by [alro-dev](https://github.com/alro-dev).  
 This repository presents sample commercial-grade web projects used to demonstrate frontend testing workflows and responsive design validation.  
-It is intended as a portfolio showcase for recruiters and collaborators.
 
 ## 🎯 Purpose
 
@@ -22,7 +21,7 @@ Each project includes:
 - Scenarios for responsiveness, navigation, and content rendering
 - Demonstrations of test-driven development practices
 
-## 🌐 Demo Projects
+## 🌐 Projects
 
 - [Reklama Element](https://reklama-element.pl/) – Sample business website used for layout and navigation testing
 - [RWD Teknik](http://rwd.teknik.pl/) – Responsive design demo used for breakpoint and mobile-first testing
